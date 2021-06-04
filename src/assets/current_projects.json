@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Dark Dungeon",
+        "description": "Custom coded Minecraft Server",
+        "language": ["Java"],
+        "repo": "https://github.com/TheDarkTurnip/dark-dungeon/tree/plugin/plugins/source%20code/dark-dungeon-multi",
+        "link": null,
+        "icon": "dark_dungeon.png"
+    },
+    {
+        "name": "Bit Quest",
+        "description": "A small MMORPG made in GameMaker & Java",
+        "language": ["Java", "GML"],
+        "repo": null,
+        "link": null,
+        "icon": "bit_quest.png"
+    },
+    {
+        "name": "/forbit.dev",
+        "description": "Website for myself",
+        "language": ["JavaScript", "React", "HTML"],
+        "repo": "https://github.com/f0rbit/forbit-dev",
+        "link": null,
+        "icon": null
+    },
+    {
+        "name": "Rich Frog",
+        "description": "Game designed for increasing mouse accuracy and speed for gamers",
+        "language": ["GML"],
+        "repo": "https://github.com/f0rbit/rich-frog",
+        "link": null,
+        "icon": null
+    },
+    {
+        "name": "Pixel Fly",
+        "description": "A peaceful game for passing time",
+        "language": ["GML"],
+        "repo": "https://github.com/f0rbit/pixel-fly",
+        "link": null,
+        "icon": null
+    },
+    {
+        "name": "LOL Terminal",
+        "description": "A League of Legends match history client built for the linux terminal",
+        "language": ["C++"],
+        "repo": "https://github.com/f0rbit/match-history-terminal",
+        "link": null,
+        "icon": null
+    }
+]
