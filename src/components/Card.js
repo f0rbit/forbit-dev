@@ -4,8 +4,8 @@ class Card extends Component {
   render() {
     return (
       <div>
-      <div className="absolute left-72 top-20 w-1/3 font-normal max-w-md shadow-lg">
-          <div className="flex flex-col flex-wrap justify-center py-6 px-6 bg-bgGrayLight rounded text-center text-white bg-opacity-50">
+      <div className="font-normal max-w-md shadow-lg h-full">
+          <div className="py-6 px-6 bg-bgGrayLight rounded text-center text-white bg-opacity-50">
             <h1 className="font-bold text-xl border-b-2">Hi There!</h1>
             <div>
               <span>My name is </span>

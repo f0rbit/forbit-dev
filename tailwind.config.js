@@ -15,11 +15,20 @@ module.exports = {
         'serif': ['Belgrano', 'ui-serif', 'Georgia'],
         'mono': ['Source Code Pro'],
         'display': ['Courier New'],
-      }
+      },
+      spacing: {
+        '48rem': '48rem',
+      },
+      height: {
+        '90s': '90vh',
+        '85s': '85vh'
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ]
 }

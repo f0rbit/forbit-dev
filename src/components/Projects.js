@@ -18,7 +18,7 @@ export default class Projects extends Component {
             <div>
                 <h1 className="text-center text-white font-bold text-4xl py-4 border-b-4">Projects</h1>
                 <br />
-                <div className="relative flex flex-wrap space-x-4 flex-row gap-4 content-center justify-center">
+                <div className="flex flex-wrap space-x-4 flex-row gap-4 content-center justify-center ">
                     {this.renderProjects()}
                 </div>
             </div>
