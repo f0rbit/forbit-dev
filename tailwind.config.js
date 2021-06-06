@@ -7,8 +7,11 @@ module.exports = {
         bgGray: '#151515',
         bgGrayLight: '#2a2a2a',
         bgGrayLighter: '#3f3f3f',
-        forbitPink: '#ed5fed',
-        forbitBlue: '#3c8be6',
+        fgGrayLigther: '#eaeaea',
+        fgGrayLight: '#d5d5d5',
+        fgGray: '#c0c0c0',
+        forbitPink: '#b05ae9',
+        forbitBlue: '#5084e4',
       },
       fontFamily: {
         'sans': ['Quicksand', 'Montserrat', 'ui-sans-serif', 'system-ui'],

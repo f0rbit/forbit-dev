@@ -5,7 +5,8 @@
         "language": ["Java"],
         "repo": "https://github.com/TheDarkTurnip/dark-dungeon/tree/plugin/plugins/source%20code/dark-dungeon-multi",
         "link": null,
-        "icon": "dark_dungeon.png"
+        "icon": "dark_dungeon.png",
+        "status": "development"
     },
     {
         "name": "Bit Quest",
@@ -13,7 +14,8 @@
         "language": ["Java", "GML"],
         "repo": null,
         "link": null,
-        "icon": "bit_quest.png"
+        "icon": "bit_quest.png",
+        "status": "development"
     },
     {
         "name": "/forbit.dev",
@@ -21,7 +23,8 @@
         "language": ["JavaScript", "React", "HTML"],
         "repo": "https://github.com/f0rbit/forbit-dev",
         "link": null,
-        "icon": null
+        "icon": null,
+        "status": "live"
     },
     {
         "name": "Rich Frog",
@@ -29,7 +32,8 @@
         "language": ["GML"],
         "repo": "https://github.com/f0rbit/rich-frog",
         "link": null,
-        "icon": null
+        "icon": null,
+        "status": "live"
     },
     {
         "name": "Pixel Fly",
@@ -37,7 +41,8 @@
         "language": ["GML"],
         "repo": "https://github.com/f0rbit/pixel-fly",
         "link": null,
-        "icon": null
+        "icon": null,
+        "status": "stopped"
     },
     {
         "name": "LOL Terminal",
@@ -45,6 +50,7 @@
         "language": ["C++"],
         "repo": "https://github.com/f0rbit/match-history-terminal",
         "link": null,
-        "icon": null
+        "icon": null,
+        "status": "released"
     }
 ]

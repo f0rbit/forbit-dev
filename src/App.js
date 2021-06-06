@@ -1,35 +1,19 @@
 import React, {Component} from 'react';
-import Card from './components/Card'
-import Menu from './components/Menu'
-import Background from './assets/2fuS10.gif'
-import Projects from './components/Projects'
+import { BrowserRouter, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage'
+import ProjectsPage from './pages/ProjectsPage'
+
+
 class App extends Component {
-
-
   render() { return(
-      <div className="font-sans font-bold bg-bgGray overflow-x-hidden overflow-y-hidden overscroll-none h-screen">
-        <div className="relative w-screen h-auto">
-          <Menu />
-        </div>
-        <div className="bg-bgGray fixed">
-          <img className="object-fill object-center h-screen w-screen" src={Background} alt="Background"/>
-        </div>
-        <div className="fixed h-screen w-screen top-10 bg-gradient-to-r from-bgGray via-bgGray to-none opacity-95 backdrop-filter backdrop-blur-xl" />
-          <div className="fixed flex flex-wrap top-20 left-10 w-1/2 h-85s min-w-min px-4 justify-center content-start overflow-auto scrollbar-thin scrollbar-thumb-bgGrayLight scrollbar-track-bgGray ">
-            <div className="py-4">
-              <Card />
-            </div>
-            <div>
-              <Projects />
-            </div>
-            {/* <div className="">
-              <Card />
-            </div>
-            <div className="fixed w-1/2 h-1/2 min-w-min top-64 bg-bgGrayLight left-5 bg-opacity-50 rounded-md py-7 px-7 shadow-lg">
-              <Projects />
-            </div> */}
-        </div>
-      </div>
+    <BrowserRouter>
+      <Route path="/" component={HomePage} exact />
+      <Route path="/contact" component={ContactPage} exact />
+      <Route path="/about" component={AboutPage} exact />
+      <Route path="/projects" component={ProjectsPage} exact />
+    </BrowserRouter>
   )};
 }
 export default App;
