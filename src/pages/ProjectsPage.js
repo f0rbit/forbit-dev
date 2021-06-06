@@ -19,7 +19,9 @@ class ProjectsPage extends Component {
         <div className="w-screen fixed top-10">
           <div className="fixed overflow-auto h-screen top-0">
             <div className="h-20" />
-            <h1 className="text-center text-white text-6xl py-5 w-full">Projects</h1>
+            <div className="flex justify-center">
+              <h1 className="text-center text-6xl py-5 w-min text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue">Projects</h1>
+            </div>
             <br />
             <div className="relative flex flex-wrap gap-6 w-screen justify-center p-3">
               {this.renderProjects()}

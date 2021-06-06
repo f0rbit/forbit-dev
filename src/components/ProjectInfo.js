@@ -42,7 +42,7 @@ export default class ProjectInfo extends Component {
         var _link = this.getLink(project);
         if (_link) {
             return (
-                <div className="p-3 bg-bgGrayLighter rounded-md w-max">
+                <div className="p-3 bg-bgGrayLighter rounded-md w-max shadow-md">
                     {this.getLink(this.props.project)}
                 </div>
             );
@@ -61,22 +61,24 @@ export default class ProjectInfo extends Component {
 
     render() {
         return(
-            <div className="bg-bgGrayLight rounded-md py-5 px-5 w-96">
+            <div className="bg-bgGrayLight rounded-md py-5 px-5 w-96 shadow-md">
                 <div className="text-white h-full">
-                    <span className="flex flex-row justify-center items-center align-center gap-2 h-16">
-                        {this.getIcon(this.props.project)}
-                        <h1 className="text-3xl">{this.props.project.name}</h1>
-                    </span>
+                    <div className="bg-bgGrayLighter rounded-2xl px-5 shadow-xl">
+                        <span className="flex justify-center items-center align-center gap-2 h-16 ">
+                            {this.getIcon(this.props.project)}
+                            <h1 className="text-3xl ">{this.props.project.name}</h1>
+                        </span>
+                    </div>
                     {/*this.getPicture(this.props.project)*/}
-                    <p className="font-light text-fgGray text-xl font-serif">{this.props.project.description}</p>
+                    <p className="font-light text-fgGray text-xl font-sans text-center p-3">{this.props.project.description}</p>
                     <br />
                     <br />
                     <span className="flex flex-row flex-wrap justify-center gap-4 items-center">
-                        <div className="p-3 bg-bgGrayLighter rounded-md w-min">
+                        <div className="p-3 bg-bgGrayLighter rounded-md w-min shadow-md">
                             <Status status={this.props.project.status} />
                         </div>
                         {this.getLinkObject(this.props.project)}
-                        <div className="flex flex-row p-3 bg-bgGrayLighter rounded-md gap-3">
+                        <div className="flex flex-row p-3 bg-bgGrayLighter rounded-md gap-3 shadow-md">
                             {this.renderLanguages(this.props.project.language)}
                         </div>
                     </span>
