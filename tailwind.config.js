@@ -26,6 +26,13 @@ module.exports = {
         '90s': '90vh',
         '85s': '85vh'
       },
+      maxWidth: {
+        '1/2': '50%',
+        '940': '940px',
+      },
+      minHeight: {
+        '16': '16px',
+      }
     },
   },
   variants: {

@@ -1,16 +1,18 @@
 import React from 'react';
 import MenuButton from './MenuButton'
+import Logo from '../assets/noback-shadow.png'
 function Menu() {
     return(
-        <div className="bg-bgGrayLighter py-1 font-mono sticky top-0 w-screen">
-            <div id="title" className="w-32 flex-initial absolute left-0">
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue">
+        <div className="bg-bgGrayLight p-1 font-mono absolute w-screen h-min flex flex-nowrap flex-row">
+            <div id="title" className="mr-auto">
+                <div className="bg-bgGrayLighter rounded-xl w-max shadow-md">
                     <a href="/">
-                        <p className="px-4 text-xl font-bold">{"forbit{}"}</p>
+                        {/*<p className="px-4 text-xl font-bold">{"forbit{}"}</p>*/}
+                        <img src={Logo} className="object-contain h-9" alt="forbit_logo" title="Home Page"/>
                     </a>
                 </div>
             </div>
-            <div id="buttons" className="flex flex-initial flex-wrap flex-row text-white justify-end ml-32 space-x-2 px-3">
+            <div id="buttons" className="flex flex-wrap flex-row justify-end text-white gap-2 place-items-center px-2">
                 
                 <MenuButton id="About Me" link="/about" />
                 <MenuButton id="Projects" link="/projects" />

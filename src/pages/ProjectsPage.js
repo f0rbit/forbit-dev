@@ -28,7 +28,7 @@ class ProjectsPage extends Component {
             </div>
           </div>
         </div>
-        <div className="absolute h-auto w-screen">
+        <div className="relative h-auto w-screen">
             <Menu />
         </div>
     </div>

@@ -6,6 +6,7 @@ import LanguageIcon from '../components/LanguageIcon'
 import DarkDungeonIcon from '../assets/project_icons/dark_dungeon.png'
 import BitQuestIcon from '../assets/project_icons/bit_quest.png'
 import PixelFlyIcon from '../assets/project_icons/pixel_fly.png'
+import ForbitDevIcon from '../assets/project_icons/forbit_dev.png'
 
 export default class ProjectInfo extends Component {
 
@@ -14,13 +15,15 @@ export default class ProjectInfo extends Component {
             case 'dark_dungeon.png': return DarkDungeonIcon;
             case 'bit_quest.png': return BitQuestIcon;
             case 'pixel_fly.png': return PixelFlyIcon;
+            case 'forbit_dev.png': return ForbitDevIcon;
             default: return null;
         }
     }
 
     getIcon = (project) => {
         var _icon = this.getPicture(project.icon);
-        if (_icon) return <img className="object-contain w-16" src={_icon} alt="Project Icon" />
+        if (_icon) return <img className="object-contain w-16 h-16" src={_icon} alt="Project Icon" />
+        return <div className="h-16" />
 
     }
 
@@ -63,10 +66,12 @@ export default class ProjectInfo extends Component {
         return(
             <div className="bg-bgGrayLight rounded-md py-5 px-5 w-96 shadow-md">
                 <div className="text-white h-full">
-                    <div className="bg-bgGrayLighter rounded-2xl px-5 shadow-xl">
-                        <span className="flex justify-center items-center align-center gap-2 h-16 ">
-                            {this.getIcon(this.props.project)}
-                            <h1 className="text-3xl ">{this.props.project.name}</h1>
+                    <div className="bg-bgGrayLighter rounded-2xl px-5 shadow-xl h-min min-w-min py-2">
+                        <span className="flex justify-center items-center align-center gap-2">
+                            <div className="flex-shrink-0">
+                                {this.getIcon(this.props.project)}
+                            </div>
+                            <h1 className="text-3xl text-center ">{this.props.project.name}</h1>
                         </span>
                     </div>
                     {/*this.getPicture(this.props.project)*/}

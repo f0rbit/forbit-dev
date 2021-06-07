@@ -23,7 +23,7 @@
         "language": ["JavaScript", "React", "HTML"],
         "repo": "https://github.com/f0rbit/forbit-dev",
         "link": null,
-        "icon": null,
+        "icon": "forbit_dev.png",
         "status": "live"
     },
     {

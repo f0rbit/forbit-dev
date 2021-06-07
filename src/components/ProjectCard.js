@@ -2,6 +2,17 @@ import React, { Component } from 'react'
 
 export default class ProjectCard extends Component {
     
+    getLink = (project) => {
+        if (project.repo) {
+            return project.repo;
+        } else if (project.link) {
+            return project.link;
+        } else {
+            return "#";
+        }
+
+    }
+
     clickFunction = () => {
         if (this.props.project.repo != null) {
             // open repo
@@ -21,10 +32,18 @@ export default class ProjectCard extends Component {
     render() {
         return(
             <div>
-            <button className="w-full bg-bgGrayLight rounded px-8 sm:py-1 lg:py-4 xl:py-8  bg-gradient-to-r hover:from-forbitPink hover:to-forbitBlue shadow-md" onClick={this.clickFunction}>
-                <p className="text-white font-sans font-bold text-sm lg:text-base xl:text-lg ">{this.props.project.name}</p>
-                <p className="w-48 text-gray-300 text-xs lg:text-s xl:text-base font-light">{this.props.project.description}</p>
-            </button>
+            <a href={this.getLink(this.props.project)}>
+                <button className="w-64 h-full bg-bgGrayLight rounded-xl px-8 py-6 bg-gradient-to-r hover:from-forbitPink hover:to-forbitBlue shadow-md">
+                    <div className ="flex flex-col flex-wrap items-center">
+                        <div className = "bg-bgGrayLighter rounded-xl w-max px-4 py-2">
+                            <p className="text-white font-sans font-bold text-2xl">{this.props.project.name}</p>
+                        </div>
+                        <div>
+                            <p className="text-fgGrayLigther font-light py-2">{this.props.project.description}</p>
+                        </div>
+                    </div>
+                </button>
+            </a>
             </div>
         );
     }
