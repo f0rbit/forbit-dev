@@ -10,7 +10,7 @@ export default class LinkedInCard extends Component {
                     <h1 className="text-2xl p-1">LinkedIn</h1>
                     <div>
                         <span className="flex justify-center gap-4">
-                            <LinkedIcon className="fill-current w-6 h-6"/>
+                            <LinkedIcon className="fill-current w-6 h-6" />
                             <a href="https://www.linkedin.com/in/tom-materne-001" className="text-blue-500">Tom Materne</a>
                         </span>
                     </div>

@@ -8,7 +8,8 @@
         "repo": "https://github.com/TheDarkTurnip/dark-dungeon/tree/plugin/plugins/source%20code/dark-dungeon-multi",
         "link": null,
         "icon": "dark_dungeon.png",
-        "status": "development"
+        "status": "development",
+        "hidden": false
     },
     {
         "name": "Bit Quest",
@@ -20,7 +21,8 @@
         "repo": null,
         "link": null,
         "icon": "bit_quest.png",
-        "status": "development"
+        "status": "development",
+        "hidden": false
     },
     {
         "name": "/forbit.dev",
@@ -33,7 +35,8 @@
         "repo": "https://github.com/f0rbit/forbit-dev",
         "link": null,
         "icon": "forbit_dev.png",
-        "status": "live"
+        "status": "live",
+        "hidden": false
     },
     {
         "name": "Rich Frog",
@@ -44,7 +47,8 @@
         "repo": "https://github.com/f0rbit/rich-frog",
         "link": null,
         "icon": null,
-        "status": "live"
+        "status": "live",
+        "hidden": false
     },
     {
         "name": "Pixel Fly",
@@ -55,7 +59,8 @@
         "repo": "https://github.com/f0rbit/pixel-fly",
         "link": null,
         "icon": null,
-        "status": "stopped"
+        "status": "stopped",
+        "hidden": true
     },
     {
         "name": "LOL Terminal",
@@ -66,7 +71,8 @@
         "repo": "https://github.com/f0rbit/match-history-terminal",
         "link": null,
         "icon": null,
-        "status": "released"
+        "status": "released",
+        "hidden": false
     },
     {
         "name": "Algorithm Dungeon",
@@ -77,6 +83,44 @@
         "repo": null,
         "link": null,
         "icon": null,
-        "status": "development"
+        "status": "development",
+        "hidden": true
+    },
+    {
+        "name": "Planning",
+        "description": "A user interface for planning & managing school work. Made for my Year 12 IT class.",
+        "language": [
+            "VisualBasic",
+            ".NET"
+        ],
+        "repo": null,
+        "link": null,
+        "icon": null,
+        "status": "abandoned",
+        "hidden": false
+    },
+    {
+        "name": "Ryan Can't Jump",
+        "description": "A platforming game where you would have to replay all the levels backwards once finished, but without the ability to jump.",
+        "language": [
+            "GML"
+        ],
+        "repo": null,
+        "link": null,
+        "icon": null,
+        "status": "abandoned",
+        "hidden": false
+    },
+    {
+        "name": "Clumsy Santa",
+        "description": "A game made for the Extra Credits 2019 Christmas Game Jam.",
+        "language": [
+            "GML"
+        ],
+        "repo": null,
+        "link": null,
+        "icon": null,
+        "status": "abandoned",
+        "hidden": false
     }
 ]

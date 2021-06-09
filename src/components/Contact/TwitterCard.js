@@ -10,7 +10,7 @@ export default class TwitterCard extends Component {
                     <h1 className="text-2xl p-1">Twitter</h1>
                     <div>
                         <span className="flex justify-center gap-4">
-                            <TwitterIcon className="fill-current w-6 h-6"/>
+                            <TwitterIcon className="fill-current w-6 h-6" />
                             <a href="https://twitter.com/f0rbit" className="text-blue-500">@f0rbit</a>
                         </span>
                     </div>

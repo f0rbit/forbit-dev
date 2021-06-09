@@ -31,7 +31,7 @@ export default class ProjectCard extends Component {
         return (
             <div>
                 <a href={this.getLink(this.props.project)}>
-                    <button className="w-64 h-full bg-bgGrayLight rounded-xl px-8 py-6 bg-gradient-to-r hoverP:from-forbitPink hover:to-forbitBlue shadow-md">
+                    <button className="w-64 h-full bg-bgGrayLight rounded-xl px-8 py-6 bg-gradient-to-r hover:from-forbitPink hover:to-forbitBlue shadow-md">
                         <div className="flex flex-col flex-wrap items-center">
                             <div className="bg-bgGrayLighter rounded-xl px-4 py-2">
                                 <p className="text-white font-sans font-bold text-2xl">

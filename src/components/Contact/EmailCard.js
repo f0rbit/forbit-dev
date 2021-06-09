@@ -10,7 +10,7 @@ export default class EmaiLCard extends Component {
                     <h1 className="text-2xl p-1">Email</h1>
                     <div>
                         <span className="flex justify-center gap-4">
-                            <EmailIcon className="fill-current w-6 h-6"/>
+                            <EmailIcon className="fill-current w-6 h-6" />
                             <a href="mailto:contact@forbit.dev" className="text-blue-500">contact@forbit.dev</a>
                         </span>
                     </div>

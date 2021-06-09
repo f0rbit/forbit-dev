@@ -4,7 +4,7 @@ class Card extends Component {
   render() {
     return (
       <div>
-      <div className="font-normal max-w-md shadow-lg h-full">
+        <div className="font-normal max-w-md shadow-lg h-full">
           <div className="py-6 px-6 bg-bgGrayLight rounded text-center text-white bg-opacity-50">
             <h1 className="font-bold text-xl border-b-2">Hi There!</h1>
             <div>
@@ -12,12 +12,12 @@ class Card extends Component {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue font-bold">Tom Materne</span>
               <span>, and I am </span>
               <Typical loop={Infinity} wrapper='b' steps={[
-                  'a developer.', 1000,
-                  'a game designer.', 1000,
-                  'an open source contributer.', 1000,
-                  'a computer science student.', 1000,
-                  'passionate about tech.', 1000,
-                  'a gamer.', 1000,
+                'a developer.', 1000,
+                'a game designer.', 1000,
+                'an open source contributer.', 1000,
+                'a computer science student.', 1000,
+                'passionate about tech.', 1000,
+                'a gamer.', 1000,
 
               ]} className="font-normal"></Typical>
             </div>
@@ -25,7 +25,7 @@ class Card extends Component {
         </div>
       </div>
     );
-    
+
   }
 }
 

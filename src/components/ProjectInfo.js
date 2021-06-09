@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Status from './ProjectStatus'
 
-import LanguageIcon from '../components/LanguageIcon'
+import Icon from '../components/Icons'
 import DarkDungeonIcon from '../assets/project_icons/dark_dungeon.png'
 import BitQuestIcon from '../assets/project_icons/bit_quest.png'
 import PixelFlyIcon from '../assets/project_icons/pixel_fly.png'
@@ -11,7 +11,7 @@ import ForbitDevIcon from '../assets/project_icons/forbit_dev.png'
 export default class ProjectInfo extends Component {
 
     getPicture = (icon) => {
-        switch(icon) {
+        switch (icon) {
             case 'dark_dungeon.png': return DarkDungeonIcon;
             case 'bit_quest.png': return BitQuestIcon;
             case 'pixel_fly.png': return PixelFlyIcon;
@@ -57,13 +57,13 @@ export default class ProjectInfo extends Component {
     renderLanguages = (languages) => {
         const constList = [];
         for (var i = 0; i < languages.length; i++) {
-            constList.push(<LanguageIcon language={languages[i]} />)
+            constList.push(<Icon language={languages[i]} />)
         }
         return constList;
     }
 
     render() {
-        return(
+        return (
             <div className="bg-bgGrayLight rounded-md py-5 px-5 w-96 shadow-md">
                 <div className="text-white h-full">
                     <div className="bg-bgGrayLighter rounded-2xl px-5 shadow-xl h-min min-w-min py-2">
