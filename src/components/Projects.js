@@ -8,6 +8,7 @@ export default class Projects extends Component {
     const constList = [];
     for (var i = 0; i < projects.length; i++) {
       // render projects[i]
+      if (projects[i].hidden || projects[i].status === "abandoned") continue;
       constList.push(<ProjectCard project={projects[i]} />)
     }
     return constList;
