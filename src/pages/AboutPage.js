@@ -30,7 +30,6 @@ class App extends Component {
           <Menu />
         </div>
         <div className="">
-          <div className="h-20" />
           <div className="flex justify-center">
             <h1 className="text-center text-6xl py-5 text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue">About Me</h1>
           </div>

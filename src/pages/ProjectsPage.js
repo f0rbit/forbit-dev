@@ -23,7 +23,6 @@ class ProjectsPage extends Component {
         <div className="">
           <Menu />
         </div>
-        <div className="h-20" />
         <div className="flex justify-center">
           <h1 className="text-center text-6xl py-5  text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue">Current Projects</h1>
         </div>
@@ -38,6 +37,7 @@ class ProjectsPage extends Component {
         <div className="flex flex-wrap gap-6 w-screen justify-center p-3">
           {this.renderProjects(true)}
         </div>
+        <div className="h-10" />
       </div>
     )
   };
