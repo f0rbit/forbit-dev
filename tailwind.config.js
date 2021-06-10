@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        bgGrayDark: '#0e0e0e',
         bgGray: '#151515',
         bgGrayLight: '#2a2a2a',
         bgGrayLighter: '#3f3f3f',
@@ -35,6 +36,10 @@ module.exports = {
       },
       minWidth: {
         '64': '64px',
+      },
+      width: {
+        '128': '32rem',
+        '256': '64rem'
       }
     },
   },

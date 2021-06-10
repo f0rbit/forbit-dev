@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage'
 import ProjectsPage from './pages/ProjectsPage'
+import LanguagePage from './pages/LanguagePage'
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <Route path="/contact" component={ContactPage} exact />
         <Route path="/about" component={AboutPage} exact />
         <Route path="/projects" component={ProjectsPage} exact />
+        <Route path="/projects/list" component={LanguagePage} exact />
       </BrowserRouter>
     )
   };

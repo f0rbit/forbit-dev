@@ -3,7 +3,7 @@ import MenuButton from './MenuButton'
 import Logo from '../assets/noback-shadow.png'
 function Menu() {
     return (
-        <div className="bg-bgGrayLight p-1 font-mono absolute w-screen h-min flex flex-nowrap flex-row">
+        <div className="bg-bgGrayLight p-1 font-mono w-screen h-min flex flex-nowrap flex-row">
             <div id="title" className="mr-auto">
                 <div className="bg-bgGrayLighter rounded-xl w-max shadow-md">
                     <a href="/">
@@ -12,7 +12,7 @@ function Menu() {
                     </a>
                 </div>
             </div>
-            <div id="buttons" className="flex flex-wrap flex-row justify-end text-white gap-2 place-items-center px-2">
+            <div id="buttons" className="flex flex-wrap flex-row justify-end text-white gap-2 place-items-center px-2 mr-4">
 
                 <MenuButton id="About Me" link="/about" />
                 <MenuButton id="Projects" link="/projects" />
