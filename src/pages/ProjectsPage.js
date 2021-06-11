@@ -19,7 +19,7 @@ class ProjectsPage extends Component {
 
   render() {
     return (
-      <div className="font-sans font-bold bg-bgGray w-full h-screen overflow-hidden overflow-y-visible">
+      <div className="font-sans font-bold bg-bgGray w-screen h-screen overflow-hidden overflow-y-visible">
         <div className="">
           <Menu />
         </div>
