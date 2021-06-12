@@ -28,7 +28,7 @@ class App extends Component {
           <h1 className="text-white text-center text-6xl">Contact</h1>
         </div>
         <div className="flex justify-center text-white gap-10 p-4 place-content-center place-items-center flex-wrap">
-          <DiscordCard id="forbit#19884" />
+          <DiscordCard id="forbit#6902" />
           <TwitterCard />
           <EmailCard />
           <LinkedInCard />
