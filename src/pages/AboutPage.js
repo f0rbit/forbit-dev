@@ -25,8 +25,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="font-sans font-bold bg-bgGray h-screen overflow-hidden">
-        <div className="h-auto">
+      <div className="font-sans font-bold bg-bgGray w-screen h-screen overflow-hidden overflow-y-visible">
+        <div className="">
           <Menu />
         </div>
         <div className="">
@@ -34,8 +34,8 @@ class App extends Component {
             <h1 className="text-center text-6xl py-5 text-transparent bg-clip-text bg-gradient-to-r from-forbitPink to-forbitBlue">About Me</h1>
           </div>
           <br />
-          <div className="relative flex justify-center flex-wrap items-center align-middle px-4">
-            <div className="bg-bgGrayLight w-48rem rounded-lg p-5 text-white font-normal">
+          <div className="flex justify-center flex-wrap items-center align-middle px-4">
+            <div className="bg-bgGrayLight rounded-lg w-48rem p-5 text-white font-normal">
               <h1 className="text-white text-center text-3xl font-bold">Description</h1>
               <br />
               <div className="text-fgGray font-normal font-serif">
@@ -43,7 +43,7 @@ class App extends Component {
               </div>
 
             </div>
-            <div className="relative flex flex-wrap flex-col w-48rem gap-6 justify-center p-3 text-center items-center">
+            <div className="flex flex-wrap flex-col w-48rem gap-6 justify-center p-3 text-center items-center">
               <div className="flex gap-4 flex-col">
                 <h1 className="text-white text-bold text-2xl">My Tech Stack</h1>
                 <Languages languages={languages} />
