@@ -39,6 +39,18 @@
         "hidden": false
     },
     {
+        "name": "GM Server",
+        "description": "A framework for interfacing between Java game servers and GameMaker clients",
+        "language": [
+            "Java"
+        ],
+        "repo": "https://github.com/f0rbit/gm-server",
+        "link": null,
+        "icon": "gm_server.png",
+        "status": "development",
+        "hidden": false
+    },
+    {
         "name": "Rich Frog",
         "description": "Game designed for increasing mouse accuracy and speed for gamers",
         "language": [
@@ -109,7 +121,7 @@
         "link": null,
         "icon": null,
         "status": "abandoned",
-        "hidden": false
+        "hidden": true
     },
     {
         "name": "Clumsy Santa",

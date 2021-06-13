@@ -7,6 +7,7 @@ import DarkDungeonIcon from '../assets/project_icons/dark_dungeon.png'
 import BitQuestIcon from '../assets/project_icons/bit_quest.png'
 import PixelFlyIcon from '../assets/project_icons/pixel_fly.png'
 import ForbitDevIcon from '../assets/project_icons/forbit_dev.png'
+import GMServerIcon from '../assets/project_icons/gm_server.png'
 
 export default class ProjectInfo extends Component {
 
@@ -16,6 +17,7 @@ export default class ProjectInfo extends Component {
             case 'bit_quest.png': return BitQuestIcon;
             case 'pixel_fly.png': return PixelFlyIcon;
             case 'forbit_dev.png': return ForbitDevIcon;
+            case 'gm_server.png': return GMServerIcon;
             default: return null;
         }
     }
