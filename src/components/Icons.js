@@ -13,6 +13,9 @@ import { ReactComponent as VSCode } from '../assets/brand_icons/vscode.svg'
 import { ReactComponent as Photoshop } from '../assets/brand_icons/photoshop.svg'
 import { ReactComponent as Arch } from '../assets/brand_icons/arch.svg'
 import { ReactComponent as Tailwind } from '../assets/brand_icons/tailwind.svg'
+import { ReactComponent as DotNet } from '../assets/language_icons/dotnet.svg'
+import { ReactComponent as VisualBasic } from '../assets/language_icons/visualbasic.svg'
+
 
 export default class Icons extends Component {
 
@@ -32,6 +35,8 @@ export default class Icons extends Component {
       case 'Photoshop': return <Photoshop className="w-6 h-6" title="Photoshop" />;
       case 'Tailwind': return <Tailwind className="w-6 h-6" title="Tailwind CSS" />;
       case 'Arch': return <Arch className="w-6 h-6" title="Arch Linux" />;
+      case 'VisualBasic': return <VisualBasic className="w-6 h-6" title=".NET framework" />;
+      case '.NET': return <DotNet className="w-6 h-6" title=".NET framework" />;
       default: return <p>null</p>
     }
   }
