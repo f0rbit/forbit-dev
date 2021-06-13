@@ -33,8 +33,8 @@ export default class ProjectInfo extends Component {
         var _link = "";
         var _text = "";
         if (project.link) {
-            _link = project.link;
-            _text = "Project Link"
+            _link = project.link.url;
+            _text = project.link.text;
         } else if (project.repo) {
             _link = project.repo;
             _text = "GitHub repo";
@@ -77,7 +77,8 @@ export default class ProjectInfo extends Component {
                         </span>
                     </div>
                     {/*this.getPicture(this.props.project)*/}
-                    <p className="font-light text-fgGray text-xl font-sans text-center p-3">{this.props.project.description}</p>
+                    <br />
+                    <p className="font-light text-fgGray text-xl font-sans text-center p-2">{this.props.project.description}</p>
                     <br />
                     <br />
                     <span className="flex flex-row flex-wrap justify-center gap-4 items-center">
