@@ -57,7 +57,10 @@
             "GML"
         ],
         "repo": "https://github.com/f0rbit/rich-frog",
-        "link": null,
+        "link": {
+            "url": "https://f0rbit.itch.io/rich-frog",
+            "text": "Play"
+        },
         "icon": null,
         "status": "live",
         "hidden": false
@@ -130,9 +133,12 @@
             "GML"
         ],
         "repo": null,
-        "link": null,
+        "link": {
+            "url": "https://f0rbit.itch.io/clumsy-santa",
+            "text": "Play"
+        },
         "icon": null,
-        "status": "abandoned",
+        "status": "live",
         "hidden": false
     }
 ]

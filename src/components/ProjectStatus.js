@@ -10,7 +10,7 @@ export default class ProjectStatus extends Component {
 
     getLiveCard = () => {
         return (
-            <div className="text-green-600 relative flex gap-4 justify-center w-min">
+            <div className="text-green-600 relative flex gap-4 justify-center w-min items-center">
                 <div>
                     <Live className="fill-current w-6 h-6" />
                 </div>
@@ -20,7 +20,7 @@ export default class ProjectStatus extends Component {
     }
     getDevelopmentCard = () => {
         return (
-            <div className="text-transparent bg-clip-text bg-gradient-to-r from-forbitBlue to-forbitPink relative flex gap-4 justify-center w-min">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-forbitBlue to-forbitPink relative flex gap-4 justify-center w-min items-center">
                 <div>
                     <Development className="text-forbitBlue fill-current w-6 h-6" />
                 </div>
@@ -30,7 +30,7 @@ export default class ProjectStatus extends Component {
     }
     getStoppedCard = () => {
         return (
-            <div className="text-red-400 relative flex gap-4 justify-center w-min" >
+            <div className="text-red-400 relative flex gap-4 justify-center w-min items-center" >
                 <div>
                     <Stopped className="fill-current w-6 h-6" />
                 </div>
@@ -40,7 +40,7 @@ export default class ProjectStatus extends Component {
     }
     getReleasedCard = () => {
         return (
-            <div className="text-green-500 relative flex gap-4 justify-center w-min">
+            <div className="text-green-500 relative flex gap-4 justify-center w-min items-center">
                 <div>
                     <Released className="fill-current w-6 h-6" />
                 </div>
@@ -50,7 +50,7 @@ export default class ProjectStatus extends Component {
     }
     getAbandonedCard = () => {
         return (
-            <div className="text-red-400 relative flex gap-4 justify-center w-min">
+            <div className="text-red-400 relative flex gap-4 justify-center w-min items-center">
                 <div>
                     <Abandoned className="fill-current w-6 h-6" />
                 </div>
