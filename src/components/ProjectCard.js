@@ -5,26 +5,10 @@ export default class ProjectCard extends Component {
         if (project.repo) {
             return project.repo;
         } else if (project.link) {
-            return project.link;
+            return project.link.url;
         } else {
             return "#";
         }
-    };
-
-    clickFunction = () => {
-        if (this.props.project.repo != null) {
-            // open repo
-            console.log("open repo");
-            window.open(this.props.project.repo);
-            return;
-        } else if (this.props.project.link != null) {
-            //open link
-            console.log("open link");
-            window.open(this.props.project.link);
-            return;
-        }
-        console.log("no link or repo");
-        return;
     };
 
     render() {
