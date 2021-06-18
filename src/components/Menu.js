@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuButton from './MenuButton'
-import Logo from '../assets/noback-shadow.png'
+//import Logo from '../assets/noback-shadow.png'
+import Logo from '../assets/forbit-icon.png'
 function Menu() {
     return (
         <div className="bg-bgGrayLight p-1 font-mono w-screen h-min flex flex-nowrap flex-row">

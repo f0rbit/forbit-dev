@@ -1,5 +1,17 @@
 [
     {
+        "name": "GM Server",
+        "description": "A framework for interfacing between Java game servers and GameMaker clients",
+        "language": [
+            "Java"
+        ],
+        "repo": "https://github.com/f0rbit/gm-server",
+        "link": null,
+        "icon": "gm_server.png",
+        "status": "live",
+        "hidden": false
+    },
+    {
         "name": "Dark Dungeon",
         "description": "Custom coded Minecraft Server",
         "language": [
@@ -36,18 +48,6 @@
         "link": null,
         "icon": "forbit_dev.png",
         "status": "live",
-        "hidden": false
-    },
-    {
-        "name": "GM Server",
-        "description": "A framework for interfacing between Java game servers and GameMaker clients",
-        "language": [
-            "Java"
-        ],
-        "repo": "https://github.com/f0rbit/gm-server",
-        "link": null,
-        "icon": "gm_server.png",
-        "status": "development",
         "hidden": false
     },
     {
