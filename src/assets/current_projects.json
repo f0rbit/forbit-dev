@@ -51,6 +51,18 @@
         "hidden": false
     },
     {
+        "name": "Arena",
+        "description": "A multiplayer fast-paced 1v1 capture the flag game",
+        "language": [
+            "Java",
+            "GML"
+        ],
+        "link": null,
+        "status": "development",
+        "icon": null,
+        "hidden": false
+    },
+    {
         "name": "Rich Frog",
         "description": "Game designed for increasing mouse accuracy and speed for gamers",
         "language": [
