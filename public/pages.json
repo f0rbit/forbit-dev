@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Home",
+      "dest": "/"
+    },
+    {
+      "title": "About Me",
+      "dest": "/about"
+    },
+    {
+        "title": "Projects",
+        "dest": "projects"
+    },
+    {
+      "title": "Timeline",
+      "dest": "/timeline"
+    },
+    {
+      "title": "GitHub",
+      "dest": "https://github.com/f0rbit"
+    },
+    {
+      "title": "Contact",
+      "dest": "/contact"
+    }
+  ]
