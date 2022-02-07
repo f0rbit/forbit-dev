@@ -7,7 +7,7 @@ export default function index() {
       <div className=" flex h-screen w-screen flex-col items-center justify-center  space-y-3 bg-neutral-900">
         <h1 className="font-sans text-8xl font-bold text-white">forbit</h1>
         <div className="font-mono text-neutral-500">
-          <span className>I </span>
+          <span>I </span>
           <Typical
             steps={[
               "am a developer.",
