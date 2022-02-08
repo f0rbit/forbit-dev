@@ -1,7 +1,7 @@
 function getFormmatedDate(date) {
   var d = new Date(date);
   const month = d.toLocaleDateString("default", { month: "long" });
-  return month + " " + d.getFullYear();
+  return d.getDate() + " " + month + ", " + d.getFullYear();
 }
 
 function recent(commits) {
@@ -10,11 +10,11 @@ function recent(commits) {
     var commit = commits[i];
     objects.push(
       <li className="ml-5 mb-5">
-        <div className="absolute -left-2 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-300"></div>
+        <div className="absolute -left-2 mt-1.5 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-300"></div>
         <time className="-ml-1 text-xs font-normal leading-none text-neutral-300">
           {getFormmatedDate(commit.date)}
         </time>
-        <div className="-ml-2 rounded-md border-2 border-solid border-neutral-600 bg-neutral-700 px-2 py-2">
+        <div className="-ml-2 rounded-md border-2 border-solid border-neutral-600 bg-neutral-700 px-2 py-2 shadow-md">
           <h1 className="-mt-1 text-lg font-semibold text-white">
             {commit.title}
           </h1>

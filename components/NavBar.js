@@ -12,7 +12,7 @@ function NavLink(name, large, dest) {
           className={
             "block rounded-md px-3 py-2 " +
             (large ? "text-base" : "text-sm") +
-            " font-medium text-white hover:bg-neutral-700 hover:text-white"
+            " font-medium text-white hover:bg-neutral-700 hover:text-white hover:shadow-md"
           }
         >
           {name}
