@@ -1,7 +1,23 @@
 import NavBar from "../components/NavBar";
 import Typical from "react-typical";
+import RecentCommits from "../components/RecentCommits";
 
-export default function index() {
+export async function getServerSideProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+
+  const line = await fetch(
+    "http://" + process.env.POST_DB + "/posts?category=GITHUB"
+  );
+  const commits = await line.json();
+  return {
+    props: {
+      commits,
+    },
+  };
+}
+
+export default function index({ commits }) {
   return (
     <div className=" overflow-x-hidden">
       <div className=" flex h-screen w-screen flex-col items-center justify-center  space-y-3 bg-neutral-900">
@@ -31,7 +47,13 @@ export default function index() {
       <div className="h-full w-full">
         <NavBar noicon="true" />
       </div>
-      <div className="h-[96rem] w-full bg-neutral-800"></div>
+      <div className="h-[96rem] w-full bg-neutral-800">
+        <div className="flex items-center justify-center p-2">
+          <div className="max-w-[50%] rounded-md border-2 border-neutral-600 py-2 px-4 shadow-md">
+            <RecentCommits commits={commits} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

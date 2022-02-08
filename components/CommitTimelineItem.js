@@ -34,11 +34,8 @@ function getIcon(open) {
   }
 }
 
-function getCollapsable(commits, open) {}
-
 function commit(commit) {
   var sha = commit.sha.substring(0, 7);
-  console.log(commit);
   return (
     <div className="rounded-md bg-neutral-600 py-1 px-3 shadow-sm">
       <div className="w-[24rem] text-sm">

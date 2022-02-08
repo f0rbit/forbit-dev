@@ -2,9 +2,14 @@ import NavBar from "../components/NavBar";
 import Timeline from "../components/Timeline";
 
 function getCommit(commits) {
+  const reversecommits = [];
+  for (var i = commits.length - 1; i >= 0; i--) {
+    reversecommits.push(commits[i]);
+  }
+
   return {
     category: "COMMITS",
-    commits: commits,
+    commits: reversecommits,
     date: commits[commits.length - 1].date,
     title: commits.length + " Commits to f0rbit/" + commits[0].project,
     project: commits[0].project,

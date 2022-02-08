@@ -14,8 +14,6 @@ function TimelineItem(data) {
 }
 
 function Timeline({ timeline }) {
-  console.log(timeline);
-
   return (
     <div className="h-full min-w-[70%] max-w-[38rem] p-2">
       <div className="flex flex-col items-center justify-center space-y-4">
