@@ -4,16 +4,41 @@ import Image from "next/image";
 
 import dark_dungeon from "../public/assets/project_icons/dark_dungeon.png";
 import bit_quest from "../public/assets/project_icons/bit_quest.png";
+import pixel_fly from "../public/assets/project_icons/pixel_fly.png";
+import forbit_dev from "../public/assets/project_icons/forbit_dev.png";
+import gm_server from "../public/assets/project_icons/gm_server.png";
 
 function getIcon(project) {
   switch (project.icon) {
     case "dark_dungeon.png":
       return (
-        <Image width={64} height={64} src={dark_dungeon} alt="Project Icon" />
+        <div className="mt-1.5 -ml-2">
+          <Image width={55} height={55} src={dark_dungeon} alt="Project Icon" />
+        </div>
       );
     case "bit_quest.png":
       return (
-        <Image width={2048} height={1024} src={bit_quest} alt="Project Icon" />
+        <div className="-ml-4 mt-2">
+          <Image width={90} height={45} src={bit_quest} alt="Project Icon" />
+        </div>
+      );
+    case "pixel_fly.png":
+      return (
+        <div className="mr-1 -ml-2">
+          <Image width={27} height={42} src={pixel_fly} alt="project icon" />
+        </div>
+      );
+    case "forbit_dev.png":
+      return (
+        <div className="mt-3 -ml-1 mr-1">
+          <Image width={80} height={80} src={forbit_dev} alt="project icon" />
+        </div>
+      );
+    case "gm_server.png":
+      return (
+        <div className="mt-2 -ml-1">
+          <Image width={60} height={30} src={gm_server} alt="project icon" />
+        </div>
       );
     default:
       return null;
@@ -62,26 +87,22 @@ function renderLanguages(languages) {
 export default function ProjectCard({ project }) {
   return (
     <div className="w-96 rounded-md border-2 border-neutral-700 bg-neutral-800 py-5 px-5 shadow-md">
-      <div className="h-full text-white">
-        <div className="h-min min-w-min rounded-2xl bg-neutral-700 px-5 py-2 shadow-xl">
-          <span className="align-center flex items-center justify-center gap-2">
-            {getIcon(project) ? (
-              <div className="w-20 ">{getIcon(project)}</div>
-            ) : (
-              <></>
-            )}
-            <h1 className="text-center text-3xl font-semibold ">
+      <div className="text-white">
+        <div className="min-w-min rounded-2xl bg-neutral-700 px-5 py-2 shadow-xl">
+          <span className="align-center flex h-12 items-center justify-center gap-2">
+            {getIcon(project) ? <div>{getIcon(project)}</div> : <></>}
+            <h1 className="text-center text-2xl font-semibold">
               {project.name}
             </h1>
           </span>
         </div>
         <br />
-        <p className="p-2 text-center font-sans text-xl font-light text-neutral-200">
+        <p className="text-md p-2 text-center font-sans font-light text-neutral-200">
           {project.description}
         </p>
         <br />
         <br />
-        <span className="flex flex-row flex-wrap items-center justify-center gap-4">
+        <span className="flex flex-row flex-wrap items-center justify-center gap-4 ">
           <div className="w-min rounded-md bg-neutral-700 p-3 shadow-md">
             <Status status={project.status} />
           </div>

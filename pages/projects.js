@@ -16,22 +16,18 @@ export async function getServerSideProps() {
 function renderProjects(projects) {
   const objects = [];
   for (var i = 0; i < projects.length; i++) {
-    objects.push(
-      <div>
-        <ProjectCard project={projects[i]} />
-      </div>
-    );
+    objects.push(<ProjectCard project={projects[i]} />);
   }
   return objects;
 }
 export default function projects({ projects }) {
   return (
-    <div className="h-full bg-neutral-800">
+    <div className="h-full min-h-screen bg-neutral-800">
       <NavBar />
       <h1 className="py-4 text-center text-4xl font-bold text-white">
         Projects
       </h1>
-      <div className="flex flex-wrap items-stretch justify-center gap-4 p-2">
+      <div className="flex flex-wrap items-stretch justify-center gap-4 p-4">
         {renderProjects(projects)}
       </div>
     </div>

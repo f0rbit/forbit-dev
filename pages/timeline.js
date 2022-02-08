@@ -34,6 +34,7 @@ export async function getServerSideProps() {
         // push out commits to reverseline
         reverseline.push(getCommit(commits));
         commits = [];
+        commits.push(templine[i]);
       }
     } else {
       if (commits.length > 1) {

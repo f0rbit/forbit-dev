@@ -1,66 +1,36 @@
 import { Component } from "react";
 
+import {
+  CppIcon,
+  DotnetIcon,
+  GamemakerIcon,
+  HtmlIcon,
+  JavaIcon,
+  JavascriptIcon,
+  PythonIcon,
+  ReactIcon,
+} from "../icons/language_icons";
+
 export default class Icons extends Component {
   getIcon = (language) => {
-    switch (language) {
-      case "GML":
-      case "GameMaker":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="Gamemaker Language"
-            src="/public/assets/language_icons/gamemaker.svg"
-          />
-        );
-      case "C++":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="C++"
-            src="/public/assets/language_icons/cpp.svg"
-          />
-        );
-      case "Python":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="Python"
-            src="/public/assets/language_icons/python.svg"
-          />
-        );
-      case "HTML":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="HTML"
-            src="/public/assets/language_icons/html.svg"
-          />
-        );
-      case "React":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="React"
-            src="/public/assets/language_icons/react.svg"
-          />
-        );
-      case "JavaScript":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="JavaScript"
-            src="/public/assets/language_icons/javascript.svg"
-          />
-        );
-      case "Java":
-        return (
-          <svg
-            className="h-6 w-6"
-            title="Java"
-            src="/public/assets/language_icons/java.svg"
-          />
-        );
-      case "GitHub":
+    switch (language.toLowerCase()) {
+      case "gml":
+      case "gameMaker":
+        return GamemakerIcon();
+      case "c++":
+      case "cpp":
+        return CppIcon();
+      case "python":
+        return PythonIcon();
+      case "html":
+        return HtmlIcon();
+      case "react":
+        return ReactIcon();
+      case "javascript":
+        return JavascriptIcon();
+      case "java":
+        return JavaIcon();
+      case "github":
         return (
           <svg
             className="h-6 w-6"
@@ -68,7 +38,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/github.svg"
           />
         );
-      case "Git":
+      case "git":
         return (
           <svg
             className="h-6 w-6"
@@ -76,7 +46,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/git.svg"
           />
         );
-      case "IntelliJ":
+      case "intellij":
         return (
           <svg
             className="h-6 w-6"
@@ -84,7 +54,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/intellij.svg"
           />
         );
-      case "VSCode":
+      case "vscode":
         return (
           <svg
             className="h-6 w-6"
@@ -92,7 +62,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/vscode.svg"
           />
         );
-      case "Photoshop":
+      case "photoshop":
         return (
           <svg
             className="h-6 w-6"
@@ -100,7 +70,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/photoshop.svg"
           />
         );
-      case "Tailwind":
+      case "tailwind":
         return (
           <svg
             className="h-6 w-6"
@@ -108,7 +78,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/tailwind.svg"
           />
         );
-      case "Arch":
+      case "arch":
         return (
           <svg
             className="h-6 w-6"
@@ -116,7 +86,7 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/arch.svg"
           />
         );
-      case "VisualBasic":
+      case "visualbasic":
         return (
           <svg
             className="h-6 w-6"
@@ -124,64 +94,16 @@ export default class Icons extends Component {
             src="/public/assets/language_icons/visualbasic.svg"
           />
         );
-      case ".NET":
-        return (
-          <svg
-            className="h-6 w-6"
-            title=".NET"
-            src="/public/assets/language_icons/dotnet.svg"
-          />
-        );
+      case ".net":
+        return DotnetIcon();
       default:
-        return <p>null</p>;
+        return <p>{language}</p>;
     }
-  };
-
-  getColor = (language) => {
-    var _col = "text-neutral-500";
-    switch (language) {
-      case "Java":
-        _col = "text-red-300";
-        break;
-      case "GML":
-        _col = "text-green-600";
-        break;
-      case "C++":
-        _col = "text-blue-500";
-        break;
-      case "Python":
-        _col = "text-yellow-200";
-        break;
-      case "HTML":
-        _col = "text-red-500";
-        break;
-      case "React":
-        _col = "text-blue-300";
-        break;
-      case "JavaScript":
-        _col = "text-yellow-300";
-        break;
-      case "Git":
-        _col = "text-yellow-700";
-        break;
-      case "GitHub":
-        _col = "text-gray-600";
-        break;
-      default:
-        break;
-    }
-    return _col;
   };
 
   render() {
     return (
-      <div
-        className={
-          "hover: text-white" +
-          this.getColor(this.props.language) +
-          " fill-current"
-        }
-      >
+      <div className={"text-white" + " h-5 w-5 fill-current"}>
         {this.getIcon(this.props.language)}
       </div>
     );

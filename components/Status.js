@@ -7,7 +7,7 @@ import { StoppedIcon } from "../icons/status_icons/stopped";
 export default class ProjectStatus extends Component {
   getLiveCard = () => {
     return (
-      <div className="relative flex w-min items-center justify-center gap-4 text-green-600">
+      <div className="relative flex w-min items-center justify-center gap-2 text-green-600">
         <div>
           <div className="h-4 w-4 fill-current">{LiveIcon()}</div>
         </div>
@@ -17,7 +17,7 @@ export default class ProjectStatus extends Component {
   };
   getDevelopmentCard = () => {
     return (
-      <div className="relative flex w-min items-center justify-center gap-4 text-fuchsia-400">
+      <div className="relative flex w-min items-center justify-center gap-2 text-fuchsia-400">
         <div className="h-4 w-4 fill-current">{DevelopmentIcon()}</div>
         <p> Development </p>
       </div>
@@ -25,7 +25,7 @@ export default class ProjectStatus extends Component {
   };
   getStoppedCard = () => {
     return (
-      <div className="relative flex w-min items-center justify-center gap-4 text-red-400">
+      <div className="relative flex w-min items-center justify-center gap-2 text-red-400">
         <div>
           <div className="h-4 w-4 fill-current">{StoppedIcon()}</div>
         </div>
@@ -35,7 +35,7 @@ export default class ProjectStatus extends Component {
   };
   getReleasedCard = () => {
     return (
-      <div className="relative flex w-min items-center justify-center gap-4 text-green-500">
+      <div className="relative flex w-min items-center justify-center gap-2 text-green-500">
         <div>
           <div className="h-4 w-4 fill-current">{ReleasedIcon()}</div>
         </div>
@@ -45,7 +45,7 @@ export default class ProjectStatus extends Component {
   };
   getAbandonedCard = () => {
     return (
-      <div className="relative flex w-min items-center justify-center gap-4 text-red-400">
+      <div className="relative flex w-min items-center justify-center gap-2 text-red-400">
         <div>
           <div className="h-4 w-4 fill-current"> {AbandonedIcon()}</div>
         </div>
