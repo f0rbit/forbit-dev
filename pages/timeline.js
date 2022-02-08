@@ -37,7 +37,7 @@ export async function getServerSideProps() {
         commits.push(templine[i]);
       }
     } else {
-      if (commits.length > 1) {
+      if (commits.length > 0) {
         // push commits as bucket
         reverseline.push(getCommit(commits));
         commits = [];
@@ -45,7 +45,7 @@ export async function getServerSideProps() {
       reverseline.push(templine[i]);
     }
   }
-  if (commits.length > 1) {
+  if (commits.length > 0) {
     reverseline.push(getCommit(commits));
   }
   const timeline = [];
