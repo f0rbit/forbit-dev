@@ -22,9 +22,11 @@ function renderProjects(projects) {
 }
 export default function projects({ projects }) {
   return (
-    <div className="h-full min-h-screen bg-neutral-800">
-      <NavBar />
-      <h1 className="py-4 text-center text-4xl font-bold text-white">
+    <div className="h-full min-h-screen  bg-neutral-800">
+      <div className="absolute top-0 w-full">
+        <NavBar />
+      </div>
+      <h1 className="mt-16 py-4 text-center text-4xl font-bold text-white">
         Projects
       </h1>
       <div className="flex flex-wrap items-stretch justify-center gap-4 p-4">

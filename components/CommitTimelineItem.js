@@ -39,7 +39,10 @@ function commit(commit) {
   return (
     <div className="rounded-md border-2 border-neutral-600 bg-neutral-700 py-1 px-3 shadow-sm">
       <div className="w-auto text-sm sm:w-[24rem]">
-        <a href={commit.permalink} className="text-sky-500 hover:text-sky-600">
+        <a
+          href={commit.permalink}
+          className="font-mono text-sky-500 hover:text-sky-600"
+        >
           {sha}
         </a>
         <span className="text-neutral-300"> - {commit.title}</span>

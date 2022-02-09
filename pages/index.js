@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Typical from "react-typical";
 import RecentCommits from "../components/RecentCommits";
+import Description from "../components/about/Description";
 
 export async function getServerSideProps() {
   // Call an external API endpoint to get posts.
@@ -47,10 +48,17 @@ export default function index({ commits }) {
       <div className="h-full w-full">
         <NavBar noicon="true" />
       </div>
-      <div className="h-[96rem] w-full bg-neutral-800">
-        <div className="flex items-center justify-center p-2">
-          <div className="max-w-[50%] rounded-md border-2 border-neutral-600 py-2 px-4 shadow-md">
-            <RecentCommits commits={commits} />
+      <div className="h-[96rem] w-screen bg-neutral-800">
+        <div className="flex flex-wrap space-y-4 p-3 lg:flex-nowrap">
+          <div className="flex w-full items-center justify-center ">
+            <div className="shadow-md">
+              <Description />
+            </div>
+          </div>
+          <div className="flex w-full items-center justify-center">
+            <div className=" flex items-center justify-center rounded-md border-2 border-neutral-700 py-2 px-4 shadow-md">
+              <RecentCommits commits={commits} />
+            </div>
           </div>
         </div>
       </div>

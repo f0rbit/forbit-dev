@@ -73,7 +73,9 @@ export default class ProjectStatus extends Component {
 
   render() {
     return (
-      <div className="font-semibold">{this.getStatus(this.props.status)}</div>
+      <div className="pt-0.5 text-center">
+        {this.getStatus(this.props.status)}
+      </div>
     );
   }
 }

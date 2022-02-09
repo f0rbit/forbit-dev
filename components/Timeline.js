@@ -9,10 +9,7 @@ export function getDate(date) {
 function monthDate(month, year) {
   return (
     <>
-      <div
-        className="p-5 text-lg text-white drop-shadow-md filter"
-        id={(month + year).toLowerCase()}
-      >
+      <div className="p-5 text-lg text-white" id={(month + year).toLowerCase()}>
         {month + " " + year}
       </div>
     </>

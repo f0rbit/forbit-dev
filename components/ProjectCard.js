@@ -57,7 +57,7 @@ function getLink(project) {
   }
 
   return _link ? (
-    <a className="text-blue-400" href={_link}>
+    <a className="font-semibold text-sky-500 hover:text-sky-600" href={_link}>
       {_text}
     </a>
   ) : null;
@@ -67,7 +67,7 @@ function getLinkObject(project) {
   var _link = getLink(project);
   if (_link) {
     return (
-      <div className="w-max rounded-md bg-neutral-700 p-3 shadow-md">
+      <div className="h-full w-max rounded-md border-2 border-neutral-600 bg-neutral-700 py-2 px-3 shadow-md">
         {getLink(project)}
       </div>
     );
@@ -88,7 +88,7 @@ export default function ProjectCard({ project }) {
   return (
     <div className="w-96 rounded-md border-2 border-neutral-700 bg-neutral-800 py-5 px-5 shadow-md">
       <div className="text-white">
-        <div className="min-w-min rounded-2xl bg-neutral-700 px-5 py-2 shadow-xl">
+        <div className="min-w-min rounded-2xl border-2 border-neutral-600 bg-neutral-700 px-5 py-2 shadow-xl">
           <span className="align-center flex h-12 items-center justify-center gap-2">
             {getIcon(project) ? <div>{getIcon(project)}</div> : <></>}
             <h1 className="text-center text-2xl font-semibold">
@@ -97,20 +97,21 @@ export default function ProjectCard({ project }) {
           </span>
         </div>
         <br />
-        <p className="text-md p-2 text-center font-sans font-light text-neutral-200">
+        <p className="text-md p-2 text-center font-sans font-light text-neutral-300">
           {project.description}
         </p>
         <br />
         <br />
-        <span className="flex flex-row flex-wrap items-center justify-center gap-4 ">
-          <div className="w-min rounded-md bg-neutral-700 p-3 shadow-md">
+
+        <div className="flex h-12 flex-row flex-wrap items-center justify-center gap-4">
+          <div className="h-full w-min rounded-md border-2 border-neutral-600 bg-neutral-700 px-3 py-2 shadow-md">
             <Status status={project.status} />
           </div>
           {getLinkObject(project)}
-          <div className="flex flex-row gap-3 rounded-md bg-neutral-700 p-3 shadow-md">
+          <div className="flex flex-row  gap-3 rounded-md border-2 border-neutral-600 bg-neutral-700 p-3 shadow-md">
             {renderLanguages(project.languages)}
           </div>
-        </span>
+        </div>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ function Nav({ noicon }) {
                 {noicon ? (
                   <></>
                 ) : (
-                  <img className="h-8 w-8" src={logo.src} alt="icon" />
+                  <img className="ml-10 h-8 w-8" src={logo.src} alt="icon" />
                 )}
               </div>
               <div className="hidden md:block">

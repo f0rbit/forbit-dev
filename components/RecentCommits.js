@@ -10,16 +10,16 @@ function recent(commits) {
     var commit = commits[i];
     objects.push(
       <li className="ml-5 mb-5">
-        <div className="absolute -left-2 mt-1.5 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-300"></div>
-        <time className="-ml-1 text-xs font-normal leading-none text-neutral-300">
+        <div className="absolute -left-2 -mt-0.5 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-300"></div>
+        <div className="-ml-1 mb-2 text-xs font-normal leading-none text-neutral-300">
           {getFormmatedDate(commit.date)}
-        </time>
+        </div>
         <div className="-ml-2 rounded-md border-2 border-solid border-neutral-600 bg-neutral-700 px-2 py-2 shadow-md">
-          <h1 className="-mt-1 text-lg font-semibold text-white">
+          <h1 className=" mb-2 text-lg font-semibold text-white">
             {commit.title}
           </h1>
           {commit.description ? (
-            <div className="mb-1 mt-1 rounded-md border-2 border-neutral-500 bg-neutral-600 p-1 text-sm text-neutral-400">
+            <div className="mb-1 mt-1 rounded-md border-2 border-neutral-600 bg-neutral-700 p-2 font-mono text-xs text-neutral-400 shadow-sm">
               {commit.description}
             </div>
           ) : (
@@ -29,7 +29,7 @@ function recent(commits) {
             <span>
               <a
                 href={commit.permalink}
-                className="text-sky-500 hover:text-sky-600"
+                className="font-mono text-sky-500 hover:text-sky-600"
               >
                 {commit.sha.substring(0, 7)}
               </a>
@@ -52,7 +52,7 @@ function recent(commits) {
 }
 export default function RecentCommits({ commits }) {
   return (
-    <div>
+    <div className="w-auto max-w-[24rem]">
       <h1 className="text-center text-lg font-bold text-white">
         Recent Commits
       </h1>

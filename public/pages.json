@@ -4,10 +4,6 @@
       "dest": "/"
     },
     {
-      "title": "About Me",
-      "dest": "/about"
-    },
-    {
         "title": "Projects",
         "dest": "projects"
     },
