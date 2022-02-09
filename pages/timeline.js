@@ -73,7 +73,7 @@ function title(word) {
 export default function Home({ timeline }) {
   return (
     <div className="relative top-0 h-screen w-screen overflow-x-hidden scroll-smooth bg-neutral-800">
-      <div className="absolute top-0 h-min w-screen">
+      <div className="absolute top-0 h-min w-full">
         <NavBar />
       </div>
       <div className="mt-16 flex flex-row flex-nowrap justify-center py-4 px-4">
