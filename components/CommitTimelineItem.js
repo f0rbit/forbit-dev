@@ -38,13 +38,13 @@ function commit(commit) {
   var sha = commit.sha.substring(0, 7);
   return (
     <div className="rounded-md border-2 border-neutral-600 bg-neutral-700 py-1 px-3 shadow-sm">
-      <div className="w-[24rem] text-sm">
+      <div className="w-auto text-sm sm:w-[24rem]">
         <a href={commit.permalink} className="text-sky-500 hover:text-sky-600">
           {sha}
         </a>
         <span className="text-neutral-300"> - {commit.title}</span>
       </div>
-      <div className="w-[24rem] text-xs text-neutral-400">
+      <div className="w-auto text-xs text-neutral-400 sm:w-[24rem]">
         {commit.description}
       </div>
     </div>
