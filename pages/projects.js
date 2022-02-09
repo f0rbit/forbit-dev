@@ -16,7 +16,7 @@ export async function getServerSideProps() {
 function renderProjects(projects) {
   const objects = [];
   for (var i = 0; i < projects.length; i++) {
-    objects.push(<ProjectCard project={projects[i]} />);
+    objects.push(<ProjectCard project={projects[i]} key={projects[i].name} />);
   }
   return objects;
 }

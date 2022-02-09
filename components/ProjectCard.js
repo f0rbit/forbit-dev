@@ -76,10 +76,13 @@ function getLinkObject(project) {
   }
 }
 
-function renderLanguages(languages) {
+function renderLanguages(project) {
+  var languages = project.languages;
   const constList = [];
   for (var i = 0; i < languages.length; i++) {
-    constList.push(<Icon language={languages[i]} />);
+    constList.push(
+      <Icon language={languages[i]} key={project.name + " " + languages[i]} />
+    );
   }
   return constList;
 }
@@ -109,7 +112,7 @@ export default function ProjectCard({ project }) {
           </div>
           {getLinkObject(project)}
           <div className="flex flex-row  gap-3 rounded-md border-2 border-neutral-600 bg-neutral-700 p-3 shadow-md">
-            {renderLanguages(project.languages)}
+            {renderLanguages(project)}
           </div>
         </div>
       </div>

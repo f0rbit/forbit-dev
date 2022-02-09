@@ -9,7 +9,7 @@ function recent(commits) {
   for (var i = 0; i < 5; i++) {
     var commit = commits[i];
     objects.push(
-      <li className="ml-5 mb-5">
+      <li key={commit.sha} className="ml-5 mb-5">
         <div className="absolute -left-2 -mt-0.5 h-4 w-4 rounded-full border-2 border-neutral-800 bg-neutral-300"></div>
         <div className="-ml-1 mb-2 text-xs font-normal leading-none text-neutral-300">
           {getFormmatedDate(commit.date)}

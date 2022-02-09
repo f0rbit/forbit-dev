@@ -30,7 +30,10 @@ export function commentIcon() {
 
 export default function RedditTimelineItem({ post }) {
   return (
-    <div className="h-full w-full rounded-md  p-2 text-center">
+    <div
+      className="h-full w-full rounded-md  p-2 text-center"
+      key={"reddit " + post.title}
+    >
       <div className="shadow-m flex flex-col items-center justify-center space-y-2 rounded-md border-2 border-neutral-700 bg-neutral-800 p-2">
         <div className="flex items-center">
           <h5 className="w-full text-center font-bold text-white">

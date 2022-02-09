@@ -37,7 +37,10 @@ function getIcon(open) {
 function commit(commit) {
   var sha = commit.sha.substring(0, 7);
   return (
-    <div className="rounded-md border-2 border-neutral-600 bg-neutral-700 py-1 px-3 shadow-sm">
+    <div
+      className="rounded-md border-2 border-neutral-600 bg-neutral-700 py-1 px-3 shadow-sm"
+      key={commit.sha}
+    >
       <div className="w-auto text-sm sm:w-[24rem]">
         <a
           href={commit.permalink}
@@ -59,7 +62,10 @@ export default function CommitTimelineItem({ commits }) {
   const projectLink = "https://github.com/f0rbit/" + commits.project;
 
   return (
-    <div className="h-full w-full rounded-md  p-2 text-center">
+    <div
+      className="h-full w-full rounded-md  p-2 text-center"
+      key={commits.commits[0].sha}
+    >
       <div className="shadow-m flex flex-col items-center justify-center rounded-md border-2  border-neutral-700 bg-neutral-800 p-2">
         <div className="flex items-center">
           <div className="">

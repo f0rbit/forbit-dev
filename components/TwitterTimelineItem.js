@@ -31,7 +31,10 @@ export function heartIcon() {
 }
 export default function TwitterTimelineItem({ post }) {
   return (
-    <div className="h-full w-full rounded-md  p-2 text-center">
+    <div
+      className="h-full w-full rounded-md  p-2 text-center"
+      key={"twitter" + post.date}
+    >
       <div className="shadow-m rounded-md border-2 border-neutral-700 bg-neutral-800 px-4 py-2">
         <div className="mb-2 flex items-center justify-center">
           <span className="text-center font-bold text-white">Tweet from</span>

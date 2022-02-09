@@ -13,12 +13,16 @@ export default class TweetText extends Component {
     for (var i = 0; i < tweet.length; i++) {
       if ("url" in tweet[i]) {
         objects.push(
-          <a href={tweet[i].url} className={this.getTextColour(tweet[i].type)}>
+          <a
+            href={tweet[i].url}
+            className={this.getTextColour(tweet[i].type)}
+            key={"link" + tweet[i].url}
+          >
             {tweet[i].content}
           </a>
         );
       } else {
-        objects.push(<span>{tweet[i].content}</span>);
+        objects.push(<span key={i}>{tweet[i].content}</span>);
       }
     }
     return objects;

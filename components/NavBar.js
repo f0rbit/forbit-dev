@@ -6,7 +6,7 @@ import links from "../public/pages.json";
 
 function NavLink(name, large, dest) {
   return (
-    <div>
+    <div key={name}>
       <Link href={dest}>
         <a
           className={
@@ -14,6 +14,7 @@ function NavLink(name, large, dest) {
             (large ? "text-base" : "text-sm") +
             " border-2 border-neutral-900 font-medium text-white hover:border-neutral-700 hover:bg-neutral-800 hover:text-white hover:shadow-md"
           }
+          href={dest}
         >
           {name}
         </a>
