@@ -32,7 +32,7 @@ export function heartIcon() {
 export default function TwitterTimelineItem({ post }) {
   return (
     <div className="h-full w-full rounded-md  p-2 text-center">
-      <div className="shadow-m rounded-md bg-neutral-700 px-4 py-2">
+      <div className="shadow-m rounded-md border-2 border-neutral-700 bg-neutral-800 px-4 py-2">
         <div className="mb-2 flex items-center justify-center">
           <span className="text-center font-bold text-white">Tweet from</span>
           <span className="w-1" />
@@ -45,7 +45,7 @@ export default function TwitterTimelineItem({ post }) {
             </a>
           </span>
         </div>
-        <div className="rounded-md bg-neutral-600 p-3">
+        <div className="mb-2 rounded-md border-2 border-neutral-600 bg-neutral-700 p-3">
           <p className="text-sm text-neutral-200">
             <TweetText tweet={tweetParser(post.tweetContent)} />
           </p>

@@ -31,13 +31,13 @@ export function commentIcon() {
 export default function RedditTimelineItem({ post }) {
   return (
     <div className="h-full w-full rounded-md  p-2 text-center">
-      <div className="shadow-m flex flex-col items-center justify-center space-y-2 rounded-md bg-neutral-700 p-2">
+      <div className="shadow-m flex flex-col items-center justify-center space-y-2 rounded-md border-2 border-neutral-700 bg-neutral-800 p-2">
         <div className="flex items-center">
           <h5 className="w-full text-center font-bold text-white">
             {post.title}
           </h5>
         </div>
-        <div className="flex w-min flex-col items-center justify-center rounded-md bg-neutral-600 p-2 text-sm text-neutral-400">
+        <div className="flex w-min flex-col items-center justify-center rounded-md border-2 border-neutral-600 bg-neutral-700 p-2 text-sm text-neutral-400">
           <div className="flex flex-row items-center justify-center">
             <span className="w-5">{upvoteIcon()}</span>
             <span>{post.score}</span>
