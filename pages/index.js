@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import Typical from "react-typical";
 import RecentCommits from "../components/RecentCommits";
 import Description from "../components/about/Description";
+import Head from "next/head";
 
 export async function getServerSideProps() {
   // Call an external API endpoint to get posts.
@@ -21,6 +22,9 @@ export async function getServerSideProps() {
 export default function index({ commits }) {
   return (
     <div className=" overflow-x-hidden">
+      <Head>
+        <title>forbit.dev | Home</title>
+      </Head>
       <div className=" flex h-screen w-screen flex-col items-center justify-center  space-y-3 bg-neutral-900">
         <h1 className="font-sans text-8xl font-bold text-white">forbit</h1>
         <div className="font-mono text-neutral-500">

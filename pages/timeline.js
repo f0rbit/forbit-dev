@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Timeline from "../components/Timeline";
+import Head from "next/head";
 
 function getCommit(commits) {
   const reversecommits = [];
@@ -73,6 +74,9 @@ function title(word) {
 export default function Home({ timeline }) {
   return (
     <div className="relative top-0 h-screen w-screen overflow-x-hidden scroll-smooth bg-neutral-800">
+      <Head>
+        <title>forbit.dev | Timeline</title>
+      </Head>
       <div className="absolute top-0 h-min w-full">
         <NavBar />
       </div>

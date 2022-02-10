@@ -1,5 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 import NavBar from "../components/NavBar";
+import Head from "next/head";
 export async function getServerSideProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
@@ -23,6 +24,9 @@ function renderProjects(projects) {
 export default function projects({ projects }) {
   return (
     <div className="h-full min-h-screen  bg-neutral-800">
+      <Head>
+        <title>forbit.dev | Projects</title>
+      </Head>
       <div className="absolute top-0 w-full">
         <NavBar />
       </div>
