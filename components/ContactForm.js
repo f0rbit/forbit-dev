@@ -10,7 +10,7 @@ class ContactForm extends Component {
         e.target,
         process.env.REACT_APP_USER_ID
       )
-      .then((result) => {});
+      .then(() => {});
     e.target.reset();
   };
 
