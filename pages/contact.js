@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
+import Head from "next/head";
 export default function Contact() {
   return (
     <div className="h-full min-h-screen w-screen overflow-x-hidden bg-neutral-800">
+      <Head>
+        <title>forbit.dev | Contact</title>
+      </Head>
       <div className="absolute top-0 w-screen">
         <NavBar />
       </div>
