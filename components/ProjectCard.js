@@ -7,6 +7,7 @@ import bit_quest from "../public/assets/project_icons/bit_quest.png";
 import pixel_fly from "../public/assets/project_icons/pixel_fly.png";
 import forbit_dev from "../public/assets/project_icons/forbit_dev.png";
 import gm_server from "../public/assets/project_icons/gm_server.png";
+import dungeon_generator from "../public/assets/project_icons/dungeon_generator.png";
 
 function getIcon(project) {
   switch (project.icon) {
@@ -38,6 +39,17 @@ function getIcon(project) {
       return (
         <div className="mt-2 -ml-1">
           <Image width={60} height={30} src={gm_server} alt="project icon" />
+        </div>
+      );
+    case "dungeon_generator.png":
+      return (
+        <div className="-mr-2 ml-1 mt-1">
+          <Image
+            width={60}
+            height={60}
+            src={dungeon_generator}
+            alt="project icon"
+          />
         </div>
       );
     default:
