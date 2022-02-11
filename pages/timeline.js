@@ -17,7 +17,7 @@ function getCommit(commits) {
   };
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
 
@@ -58,6 +58,7 @@ export async function getServerSideProps() {
     props: {
       timeline,
     },
+    revalidate: 30,
   };
 }
 
