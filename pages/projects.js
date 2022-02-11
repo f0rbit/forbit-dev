@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import NavBar from "../components/NavBar";
 import Head from "next/head";
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
 
@@ -11,6 +11,7 @@ export async function getServerSideProps() {
     props: {
       projects: prjs,
     },
+    revalidate: 100,
   };
 }
 
