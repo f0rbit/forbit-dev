@@ -4,7 +4,7 @@ import RecentCommits from "../components/RecentCommits";
 import Description from "../components/about/Description";
 import Head from "next/head";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
 
@@ -16,6 +16,7 @@ export async function getServerSideProps() {
     props: {
       commits,
     },
+    revalidate: 30,
   };
 }
 
