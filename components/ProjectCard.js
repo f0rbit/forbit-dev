@@ -112,7 +112,13 @@ export default function ProjectCard({ project }) {
       <div className="text-white">
         <div className="min-w-min rounded-2xl border-2 border-neutral-600 bg-neutral-700 px-5 py-2 shadow-xl">
           <span className="align-center flex h-12 items-center justify-center gap-2">
-            {getIcon(project) ? <div>{getIcon(project)}</div> : <></>}
+            {getIcon(project) ? (
+              <div style={{ "image-rendering": "crisp-edges" }}>
+                {getIcon(project)}
+              </div>
+            ) : (
+              <></>
+            )}
             <h1 className="text-center text-2xl font-semibold">
               {project.name}
             </h1>
