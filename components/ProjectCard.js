@@ -8,6 +8,7 @@ import pixel_fly from "../public/assets/project_icons/pixel_fly.png";
 import forbit_dev from "../public/assets/project_icons/forbit_dev.png";
 import gm_server from "../public/assets/project_icons/gm_server.png";
 import dungeon_generator from "../public/assets/project_icons/dungeon_generator.png";
+import arena_icon from "../public/assets/project_icons/arena_icon.png";
 
 function getIcon(project) {
   switch (project.icon) {
@@ -50,6 +51,12 @@ function getIcon(project) {
             src={dungeon_generator}
             alt="project icon"
           />
+        </div>
+      );
+    case "arena_icon.png":
+      return (
+        <div className="-ml-2">
+          <Image width={60} height={60} src={arena_icon} alt="project icon" />
         </div>
       );
     default:
