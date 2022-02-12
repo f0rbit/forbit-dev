@@ -28,15 +28,15 @@ export default function projects({ projects }) {
       <Head>
         <title>forbit.dev | Projects</title>
       </Head>
-      <div className="absolute top-0 w-full">
-        <NavBar />
-      </div>
       <div className="h-16" />
       <h1 className="py-4 text-center text-4xl font-bold text-white">
         Projects
       </h1>
       <div className="flex flex-wrap items-stretch justify-center gap-4 p-4">
         {renderProjects(projects)}
+      </div>
+      <div className="absolute top-0 w-full">
+        <NavBar />
       </div>
     </div>
   );
