@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
-import Head from "next/head";
+import Head from "next/Head";
 export default function Contact() {
   return (
     <div className="h-full min-h-screen w-screen overflow-x-hidden bg-neutral-800">

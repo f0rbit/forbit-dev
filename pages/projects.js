@@ -1,6 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 import NavBar from "../components/NavBar";
-import Head from "next/head";
+import Head from "next/Head";
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library

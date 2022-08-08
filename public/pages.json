@@ -5,7 +5,11 @@
     },
     {
         "title": "Projects",
-        "dest": "projects"
+        "dest": "/projects"
+    },
+    {
+      "title": "Blog",
+      "dest": "/blog"
     },
     {
       "title": "Timeline",

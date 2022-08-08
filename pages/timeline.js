@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import Timeline from "../components/Timeline";
-import Head from "next/head";
+import Head from "next/Head";
 
 function getCommit(commits) {
   const reversecommits = [];

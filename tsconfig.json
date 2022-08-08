@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/timeline.js", "pages/_app.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/timeline.js", "pages/_app.js", "components/blog/PostCard.ksx", "components/blog/CategoryCard.ksx"],
   "exclude": ["node_modules"]
 }

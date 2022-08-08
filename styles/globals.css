@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rc-pagination {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.rc-pagination-item {
+    width: 3ch;
+    text-align: center;
+    padding-bottom: 2px;
+    background-color: #222222;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.rc-pagination-item:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+.rc-pagination-item-active {
+    background-color: #333333;
+}
