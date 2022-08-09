@@ -12,8 +12,8 @@ import {
 } from "../icons/language_icons";
 
 export default class Icons extends Component {
-  getIcon = (language) => {
-    switch (language.toLowerCase()) {
+  getIcon = (tech) => {
+    switch (tech["name"].toLowerCase()) {
       case "gml":
       case "gameMaker":
         return GamemakerIcon();
@@ -25,6 +25,7 @@ export default class Icons extends Component {
       case "html":
         return HtmlIcon();
       case "react":
+      case "reactjs":
         return ReactIcon();
       case "javascript":
         return JavascriptIcon();
@@ -97,14 +98,14 @@ export default class Icons extends Component {
       case ".net":
         return DotnetIcon();
       default:
-        return <p>{language}</p>;
+        return <p>{tech["name"]}</p>;
     }
   };
 
   render() {
     return (
       <div className={"text-white" + " h-5 w-5 fill-current"}>
-        {this.getIcon(this.props.language)}
+        {this.getIcon(this.props.technology)}
       </div>
     );
   }

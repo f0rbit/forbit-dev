@@ -78,7 +78,7 @@ export default function Home({ timeline }) {
       <Head>
         <title>forbit.dev | Timeline</title>
       </Head>
-      <div className="absolute top-0 h-min w-full">
+      <div className="absolute top-0 z-10 h-min w-full">
         <NavBar />
       </div>
       <div className="mt-16 flex flex-row flex-nowrap justify-center py-4 px-4">

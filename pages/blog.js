@@ -65,7 +65,7 @@ export default function Home({ categories }) {
       <Head>
         <title>forbit.dev | Blog</title>
       </Head>
-      <div className="absolute top-0 h-min w-full">
+      <div className="absolute top-0 z-10 h-min w-full">
         <NavBar />
       </div>
 
