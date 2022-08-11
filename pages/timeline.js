@@ -21,7 +21,9 @@ export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
 
-  const line = await fetch("http://" + process.env.POST_DB + "/posts");
+  const line = await fetch(
+    "http://" + process.env.NEXT_PUBLIC_POST_DB + "/posts"
+  );
   const templine = await line.json();
   const reverseline = [];
   // group commits to the same project together
@@ -65,7 +67,7 @@ export async function getStaticProps() {
 function title(word) {
   return (
     <div>
-      <div className="py-2 px-1 text-xl font-medium text-white">
+      <div className="py-2 px-1 text-4xl font-bold text-white">
         <div className="">{word}</div>
       </div>
     </div>
@@ -81,7 +83,7 @@ export default function Home({ timeline }) {
       <div className="absolute top-0 z-10 h-min w-full">
         <NavBar />
       </div>
-      <div className="mt-16 flex flex-row flex-nowrap justify-center py-4 px-4">
+      <div className="mt-14 flex flex-row flex-nowrap justify-center py-4 px-4">
         <div className="w-[48rem]">
           <div className="flex flex-col flex-nowrap items-center justify-center">
             <div>{title("Timeline")}</div>

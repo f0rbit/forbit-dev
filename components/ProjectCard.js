@@ -1,6 +1,6 @@
 import Icon from "../components/Icons";
 import Status from "./Status";
-import Image from "next/image";
+import Image from "next/Image";
 
 import dark_dungeon from "../public/assets/project_icons/dark_dungeon.png";
 import bit_quest from "../public/assets/project_icons/bit_quest.png";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import logo from "../public/icon.png";
-import Link from "next/link";
+import Link from "next/Link";
 import links from "../public/pages.json";
 
 function NavLink(name, large, dest) {

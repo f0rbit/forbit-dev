@@ -9,7 +9,7 @@ export async function getStaticProps() {
   // You can use any data fetching library
 
   const line = await fetch(
-    "http://" + process.env.POST_DB + "/posts?category=GITHUB"
+    "http://" + process.env.NEXT_PUBLIC_POST_DB + "/posts?category=GITHUB"
   );
   const commits = await line.json();
   return {
