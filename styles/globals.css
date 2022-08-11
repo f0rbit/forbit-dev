@@ -34,3 +34,11 @@
 .hidden-scrollbar::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+.input-field {
+    @apply w-full rounded-md bg-neutral-800 focus:bg-neutral-700 px-3 py-1 font-mono h-8
+}
+
+.input-text {
+    @apply hidden-scrollbar h-full w-full resize-none rounded-md bg-neutral-800 px-2 py-1 font-mono text-white focus:bg-neutral-700
+}

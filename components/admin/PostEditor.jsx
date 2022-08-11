@@ -9,8 +9,8 @@ export default function PostEditor({ post, categories }) {
     );
   }
 
-  const inputClass =
-    "w-full rounded-sm bg-neutral-800 focus:bg-neutral-700 px-3 py-1 font-mono h-8";
+  // const inputClass =
+  //   "w-full rounded-sm bg-neutral-800 focus:bg-neutral-700 px-3 py-1 font-mono h-8";
   const labelClass = "font-mono";
   console.log(categories);
   var date = new Date(post.postDate);
@@ -33,7 +33,7 @@ export default function PostEditor({ post, categories }) {
                   <td className={labelClass}>Title</td>
                   <td>
                     <input
-                      className={inputClass + " text-lg"}
+                      className={"input-field text-lg"}
                       type="text"
                       defaultValue={post.title}
                     ></input>
@@ -43,7 +43,7 @@ export default function PostEditor({ post, categories }) {
                   <td className={labelClass}>Image URL</td>
                   <td>
                     <input
-                      className={inputClass + " text-xs"}
+                      className={"input-field text-xs"}
                       type="text"
                       defaultValue={post.coverPicture}
                     ></input>
@@ -52,7 +52,7 @@ export default function PostEditor({ post, categories }) {
                 <tr>
                   <td className={labelClass}>Status</td>
                   <td>
-                    <select className={inputClass} defaultValue={post.status}>
+                    <select defaultValue={post.status} className="input-field">
                       <option>DRAFT</option>
                       <option>PUBLISHED</option>
                       <option>HIDDEN</option>
@@ -63,7 +63,7 @@ export default function PostEditor({ post, categories }) {
                   <td className={labelClass}>Slug</td>
                   <td>
                     <input
-                      className={inputClass + "text-xs"}
+                      className={"input-field text-xs"}
                       type="text"
                       defaultValue={post.slug}
                     ></input>
@@ -73,9 +73,9 @@ export default function PostEditor({ post, categories }) {
                   <td className={labelClass}>Date</td>
                   <td>
                     <input
-                      className={inputClass}
                       type="datetime-local"
                       defaultValue={dateValue}
+                      className="input-field"
                     ></input>
                   </td>
                 </tr>
@@ -111,9 +111,9 @@ export default function PostEditor({ post, categories }) {
         </div>
 
         <div className="flex w-full flex-col items-stretch justify-center gap-2 lg:h-48 lg:max-h-48 lg:flex-row">
-          <div className="relative h-48 max-w-2xl lg:w-2/3">
+          <div className="relative h-48 lg:w-2/3">
             <textarea
-              className="hidden-scrollbar peer h-full w-full resize-none rounded-md bg-neutral-800 px-2 py-1 font-mono text-white focus:bg-neutral-700"
+              className="input-text peer"
               defaultValue={post.content}
             ></textarea>
             <div className="absolute bottom-0 right-0 rounded-tl-md rounded-br-md bg-neutral-700 px-4 py-1 font-mono text-neutral-300 shadow-md  peer-focus:hidden">
@@ -121,9 +121,9 @@ export default function PostEditor({ post, categories }) {
             </div>
           </div>
 
-          <div className="relative max-w-xl lg:w-1/3">
+          <div className="relative lg:w-1/3">
             <textarea
-              className="hidden-scrollbar peer h-full w-full resize-none rounded-md bg-neutral-800 px-2 py-1 font-mono text-white focus:bg-neutral-700"
+              className="input-text peer"
               defaultValue={post.metadata}
             ></textarea>
             <div className="absolute bottom-0 right-0 rounded-tl-md rounded-br-md bg-neutral-700 px-4 py-1 font-mono text-neutral-300 shadow-md  peer-focus:hidden">
